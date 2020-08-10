@@ -1,12 +1,12 @@
-class Carro
-    attr_accessor :nome
-    def ligar
-        puts 'Carro ligado'
+class Conta
+    attr_accessor :saldo
+
+    def deposita(valor)
+        self.saldo += valor
+        puts "Depositando a quantia de #{valor} reais"
     end
 end
 
-civic = Carro.new
-civic.nome = 'Civic'
-civic.ligar
-puts civic.nome
-puts civic.class
+c = Conta.new
+c.saldo = 0.0
+c.deposita (100.00)
