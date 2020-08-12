@@ -23,7 +23,7 @@ Cenário: Deu ruim não tenho saldo
 Cenário: Limite por saque :(
     Dado que eu tenho R$ 1000 em minha conta corrente
     Quando faço um saque de R$ 701
-    Então vejo a mensagem "Limite máximo por saque é de R$ 700"
+    Então vejo a mensagem "Limite maximo por saque eh R$ 700"
     E meu saldo final deve ser R$ 1000
 
 
