@@ -33,10 +33,10 @@ describe ContaCorrente do
                 @conta = ContaCorrente.new(0.00)
                 @conta.saca(100.00)
             end
-            it 'vejo mensagem' do
+            it 'então exibe a mensagem' do
                 expect(@conta.mensagem).to eql 'Saldo insuficiente para saque :('
             end
-            it 'meu saldo permance com o valor inicial' do
+            it 'e o saldo permance com o valor inicial' do
                 expect(@conta.saldo).to eql 0.00
             end
         end
@@ -46,10 +46,10 @@ describe ContaCorrente do
                 @conta = ContaCorrente.new(100.00)
                 @conta.saca(101.00)
             end
-            it 'vejo mensagem' do
+            it 'então exibe a mensagem' do
                 expect(@conta.mensagem).to eql 'Saldo insuficiente para saque :('
             end
-            it 'meu saldo permance com o valor inicial' do
+            it 'e o saldo permance com o valor inicial' do
                 expect(@conta.saldo).to eql 100.00
             end
         end
@@ -59,10 +59,10 @@ describe ContaCorrente do
                 @conta = ContaCorrente.new(1000.00)
                 @conta.saca(701.00)
             end
-            it 'vejo mensagem' do
+            it 'então exibe a mensagem' do
                 expect(@conta.mensagem).to eql 'Limite maximo por saque eh R$ 700'
             end
-            it 'meu saldo permance com o valor inicial' do
+            it 'e o saldo permance com o valor inicial' do
                 expect(@conta.saldo).to eql 1000.00
             end
         end
