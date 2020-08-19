@@ -1,7 +1,7 @@
 
 describe 'Botões de Radio', :radio do
     before(:each) do
-        visit "https://training-wheels-protocol.herokuapp.com/radios"
+        visit 'https://training-wheels-protocol.herokuapp.com/radios'
     end
 
     it 'seleção por ID' do
